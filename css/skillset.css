@@ -35,21 +35,5 @@
     flex-direction: row;
     align-items: center;
     justify-content:flex-end;
-    animation: bar 2s;
 
-}
-
-.bar > p {
-    padding: 0 10%;
-}
-
-@keyframes bar { 
-    0% {
-        width: 0%;
-
-    }
-    100% {
-        width:90%;
-    }
-    
 }

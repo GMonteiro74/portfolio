@@ -10,11 +10,6 @@ h1 {
     transition: font-size 0.5s ease-in-out;
 }
 
-.cover h1:hover {
-    font-size: 2.2rem;
-    cursor:default;
-}
-
 h2 {
     font-size: 1.2rem;
     font-size: 'Kanit', sans-serif;
@@ -25,13 +20,13 @@ h2 {
 
 /* BACKGROUND COLOURS */
 .ocean-gradient-bg {
-    background: linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%);
+    /* background: linear-gradient(88.69deg, #3493e669 4.92%, #4967fe62 96.69%); */
     width: 100vw;
     
 }
 
 .light-bg {
-    background: linear-gradient(290.17deg, #FFFFFF 0.89%, #AABBBB 107.02%);
+    background: linear-gradient(290.17deg, #fafafa77 0.89%, #ecffff85 107.02%);
     height: 25vh;
     display: flex;
     align-items: center;

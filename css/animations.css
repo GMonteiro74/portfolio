@@ -1,0 +1,107 @@
+
+/* SKILLSET BARS */
+.width-50 {
+    width: 50%;
+}
+
+.width-40 {
+    width: 40%;
+
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-50[data-scroll=in] {
+    animation: wid50 2s;
+    
+}
+
+.width-60[data-scroll=in] {
+    animation: wid60 2s;
+    
+}
+
+.width-40[data-scroll=in] {
+    animation: wid40 2s;
+    
+}
+
+.width-80[data-scroll=in] {
+    animation: wid80 2s;
+    
+}
+
+.width-90[data-scroll=in] {
+    animation: wid90 2s;
+    
+}
+
+.bar > p {
+    padding: 0 10%;
+}
+
+@keyframes wid40 { 
+    0% {
+        width: 0%;
+
+    }
+    100% {
+        width:40%;
+    }
+    
+}
+
+@keyframes wid50 { 
+    0% {
+        width: 0%;
+
+    }
+    100% {
+        width:50%;
+    }
+    
+}
+
+@keyframes wid60 { 
+    0% {
+        width: 0%;
+
+    }
+    100% {
+        width:60%;
+    }
+    
+}
+
+@keyframes wid80 { 
+    0% {
+        width: 0%;
+
+    }
+    100% {
+        width:80%;
+    }
+    
+}
+
+@keyframes wid90 { 
+    0% {
+        width: 0%;
+
+    }
+    100% {
+        width:90%;
+    }
+    
+}
+
