@@ -1,0 +1,43 @@
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    color: #cacaca;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.cover h1{
+    transition: font-size 0.5s ease-in-out;
+}
+
+.cover h1:hover {
+    font-size: 2.2rem;
+    cursor:default;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-size: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: #96989C;
+}
+
+
+/* BACKGROUND COLOURS */
+.ocean-gradient-bg {
+    background: linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%);
+    width: 100vw;
+    
+}
+
+.light-bg {
+    background: linear-gradient(290.17deg, #FFFFFF 0.89%, #AABBBB 107.02%);
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light-bg > * {
+    color: #292E38;
+}

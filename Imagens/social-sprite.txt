@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-git-mobile {
+    width: 42px;
+    height: 40px;
+    background-position: 0 0;
+}
+
+.sprite-gitDesk {
+    width: 100px;
+    height: 98px;
+    background-position: -42px 0;
+}
+
+.sprite-indesk {
+    width: 100px;
+    height: 100px;
+    background-position: -142px 0;
+}
+
+.sprite-insta {
+    width: 100px;
+    height: 100px;
+    background-position: -242px 0;
+}
+
+.sprite-insta-mobile {
+    width: 40px;
+    height: 40px;
+    background-position: -342px 0;
+}
+
+.sprite-linkedin-mobile {
+    width: 40px;
+    height: 40px;
+    background-position: -382px 0;
+}

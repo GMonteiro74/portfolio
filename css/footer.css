@@ -1,0 +1,46 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.social_media > a {
+    text-indent: -9999px;
+}
+
+.linkedin, .insta, .github {
+    background-image: url(../Imagens/spritesheet.png);
+}
+
+/* MOBILE ICONS - depois nas media queries alterar estes valores pelos icones desktop */
+.linkedin {
+    width: 40px;
+    height: 40px;
+    background-position: -382px 0;
+}
+
+.insta {
+    width: 40px;
+    height: 40px;
+    background-position: -342px 0;
+}
+
+.github {
+    width: 42px;
+    height: 40px;
+}
+
+.linkedin:hover, .insta:hover, .github:hover {
+    background-image: url(../Imagens/hover-sprites.png);
+    transition: all 0.5s ease-out;
+}
