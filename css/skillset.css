@@ -23,12 +23,13 @@
 }
 
 .skillset-sect > h1 {
-    text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+
 }
 
 .bar {
-    background: linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%);
+    /* background: linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%); */
+    background: linear-gradient(88.69deg, #ED7836 4.92%, #DD4B4B 87.61%);
     border-radius: 10px;
     height: 30px;
     display: flex;

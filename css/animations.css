@@ -105,3 +105,6 @@
     
 }
 
+.profile-pic:hover {
+    background: url(../Imagens/profile_round_pic.png);
+}

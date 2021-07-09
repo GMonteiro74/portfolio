@@ -7,20 +7,77 @@
     gap: 3vh;
 }
 
-.projs-flex > * {
-    border: 4px solid rgba(209, 209, 209, 1);
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
+.proj-card {
+    background: linear-gradient(234.3deg, rgba(226, 228, 233, 0.297) 3.98%, rgba(129, 188, 207, 0.3078) 96.21%);
+    box-shadow: 6px 6px 6px rgba(38, 38, 38, 0.43);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    width: 90%;
+    height: 80%;
+    padding: 40px 20px;
+    display: flex;
 }
 
-.projs-flex a {
+.flex-column {
+    flex-direction: column;
+    align-items: center;
+    gap: 12vh;
+    
+}
+
+.flex-row {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-proj {
+    text-align: right;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: flex-end;
 }
 
+.hide {
+    display: none;
+}
+
+
+    /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); */
+
+
+.img-website {
+    width: 60vw;
+    height: 25vh;
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+z
+.img-mobile {
+    height: 75%;
+    width: 30%;
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+
+.proj-card:first-child .img-website:nth-child(2) {
+    background: url(../Imagens/abaco_16_9.png);
+    background-size: cover;
+}
+
+.proj-card:nth-child(2) .img-website:nth-child(2) {
+    background: url(../Imagens/pecafruta.png);
+    background-size: cover;
+}
+
+.img-mobile {
+    background: url(../Imagens/cripto_1.png);
+}
+
+
+
+
+/* 
 .projs-flex a:first-child {
     background: linear-gradient(0deg, rgba(81, 86, 94, 0.5),rgba(81, 86, 94, 0.5)), url(../Imagens/screenshot-abaco.g-monteiro.pt-2021.07.02-10_05_11.png);
     background-size:cover;
@@ -48,9 +105,9 @@
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
+} */
 
-a > section {
+/* a > section {
     background: rgba(209, 209, 209, 0.7);
     backdrop-filter: blur(8px);
     width: 100%;
@@ -59,11 +116,4 @@ a > section {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.projs-flex p {
-    text-align: center;
-    color: #292E38;
-    width: 75%;
-    word-wrap: break-word;
-}
+} */

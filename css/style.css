@@ -23,6 +23,8 @@
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -88,6 +90,17 @@ body {
     
 }
 
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(31, 92, 143, 0.29), rgba(31, 92, 143, 0.29)), url(../Imagens/profile_round_pic.png);
+    box-shadow: 5px 5px 6px 5px rgba(29, 29, 29, 0.397);
+    transition-property: all;
+    transition-duration: 1.5s;
+
+}
+
 /* padding para certos articles e correspondentes titles */
 .art-padding {
     padding: 60px 0;
@@ -99,18 +112,18 @@ body {
 /* CTA */
 .mainBtn {
     padding: 10px 40px;
-    background: linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%);
+    background-image: linear-gradient(88.69deg, #ED7836 4.92%, #DD4B4B 87.61%);
     border-radius: 15px;
     font-weight: 300;
     font-size: 1.1rem;
     border: none;
     font-family: 'Audiowide', cursive;
-
+    transition: background-image 1.5s ease-in;
 }
 
 .mainBtn:hover, .mainBtn:focus {
-    background: linear-gradient(88.69deg, #c2c3c4 4.92%, #e2e4ee 96.69%);
-    transition: all 1s ease-in;
+    background-image: linear-gradient(88.69deg, #c2c3c4 4.92%, #e2e4ee 96.69%);
+    
     
 }
 
@@ -121,9 +134,15 @@ button {
     align-self: center;
 }
 
-/* colocar o texto dentro da span em gradiente */
-span, .mainBtn:hover > p, .skillset-sect > h1 {
+/* colocar os textos em gradientes */
+span {
     background: -webkit-linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainBtn:hover > p, .skillset-sect > h1  {
+    background: -webkit-linear-gradient(88.69deg, #ED7836 4.92%, #DD4B4B 87.61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
