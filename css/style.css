@@ -55,6 +55,14 @@ body {
     align-items: center;
 }
 
+.text-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .upper-case {
     text-transform: uppercase;
 }
@@ -96,6 +104,7 @@ body {
     border-radius: 50%;
     background: linear-gradient(0deg, rgba(31, 92, 143, 0.29), rgba(31, 92, 143, 0.29)), url(../Imagens/profile_round_pic.png);
     box-shadow: 5px 5px 6px 5px rgba(29, 29, 29, 0.397);
+    background-size:contain;
     transition-property: all;
     transition-duration: 1.5s;
 
@@ -123,8 +132,7 @@ body {
 
 .mainBtn:hover, .mainBtn:focus {
     background-image: linear-gradient(88.69deg, #c2c3c4 4.92%, #e2e4ee 96.69%);
-    
-    
+
 }
 
 button {
@@ -134,15 +142,52 @@ button {
     align-self: center;
 }
 
+.text-slider-items {
+    display: none;
+}
+
 /* colocar os textos em gradientes */
-span {
-    background: -webkit-linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%);
+
+.mainBtn:hover > p, .skillset-sect > h1, span  {
+    background: -webkit-linear-gradient(88.69deg, #ED7836 4.92%, #DD4B4B 87.61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.mainBtn:hover > p, .skillset-sect > h1  {
-    background: -webkit-linear-gradient(88.69deg, #ED7836 4.92%, #DD4B4B 87.61%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@media screen and (min-width: 600px) {
+    
+    body {
+        font-size: 20px;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .profile-pic {
+        height: 200px;
+        width: 200px;
+        /* background: linear-gradient(0deg, rgba(31, 92, 143, 0.29), rgba(31, 92, 143, 0.29)), url(../Imagens/profile_pic_300px.png); */
+        
+        
+    }
+
+    .wrapper {
+        width: 60vw;
+    }
+
+    .text-wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .text-wrap section:nth-child(2) {
+        width: 50%;
+    }
 }

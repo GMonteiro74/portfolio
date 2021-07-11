@@ -13,7 +13,7 @@
     backdrop-filter: blur(2px);
     border-radius: 30px;
     width: 90%;
-    height: 80%;
+    height: 70%;
     padding: 40px 20px;
     display: flex;
 }
@@ -21,7 +21,7 @@
 .flex-column {
     flex-direction: column;
     align-items: center;
-    gap: 12vh;
+    gap: 8vh;
     
 }
 
@@ -38,6 +38,32 @@
     align-items: flex-end;
 }
 
+.title-proj p {
+    font-weight: 300;
+}
+
+.title-proj h1 {
+    font-size: 1.6rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+.abaco h1 {
+    color: #70CA79;
+}
+
+.peca-fruta h1 {
+    color: #FFA000;
+}
+
+.cripto h1 {
+    color: #B8B8B8;
+}
+
+.met h1 {
+    color: #F0E051;
+}
+
 .hide {
     display: none;
 }
@@ -52,12 +78,12 @@
     filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
 }
-z
+
 .img-mobile {
-    height: 75%;
-    width: 30%;
+    height: 40vh;
+    width: 25vw;
     filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .proj-card:first-child .img-website:nth-child(2) {
@@ -70,50 +96,49 @@ z
     background-size: cover;
 }
 
-.img-mobile {
+.proj-card:nth-child(3) .img-mobile:nth-child(1) {
     background: url(../Imagens/cripto_1.png);
+    background-size: cover;
 }
 
+.proj-card:nth-child(3) .img-mobile:nth-child(3) {
+    background: url(../Imagens/inbox01.png);
+    background-size: cover;
+}
 
+.proj-card:nth-child(4) .img-mobile:nth-child(1) {
+    background: url(../Imagens/smartphone.png);
+    background-size: cover;
+}
 
+.proj-card:nth-child(4) .img-mobile:nth-child(3) {
+    background: url(../Imagens/smartphone_metpt.png);
+    background-size: cover;
+}
 
-/* 
-.projs-flex a:first-child {
-    background: linear-gradient(0deg, rgba(81, 86, 94, 0.5),rgba(81, 86, 94, 0.5)), url(../Imagens/screenshot-abaco.g-monteiro.pt-2021.07.02-10_05_11.png);
-    background-size:cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+@media screen and (min-width: 1000px) {
+    .proj-card {
+        width: 75%;
+        height: 100%;
+    }
+
+    .img-website {
+        height: 45vh;
+        width: 50vw;
+    }
+
+    .img-mobile {
+        height: 60vh;
+        width: 20vw;
+        
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .projs-flex {
+        gap: 10vh;
+    }
     
 }
-
-.projs-flex a:nth-child(2) {
-    background: linear-gradient(0deg, rgba(81, 86, 94, 0.5),rgba(81, 86, 94, 0.5)),url(../Imagens/peca.png);
-    background-size:cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.projs-flex a:nth-child(3) {
-    background: linear-gradient(0deg, rgba(81, 86, 94, 0.5),rgba(81, 86, 94, 0.5)), url(../Imagens/cptore.png);
-    background-size:cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.projs-flex a:last-child {
-    background: linear-gradient(0deg, rgba(81, 86, 94, 0.5),rgba(81, 86, 94, 0.5)), url(../Imagens/metpt.png);
-    background-size:cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-} */
-
-/* a > section {
-    background: rgba(209, 209, 209, 0.7);
-    backdrop-filter: blur(8px);
-    width: 100%;
-    height: 25%;
-    border-radius: 0 0 15px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */

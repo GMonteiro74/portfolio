@@ -53,7 +53,7 @@ let subTitleAnim = {
     distance: '1000px',
     origin: 'left',
     easing: 'ease-out',
-    duration: 3000,
+    duration: 2200,
     delay: 500
 }
 
@@ -61,8 +61,8 @@ let mainBtnAnim = {
     opacity: 0,
     // scale: 0,
     easing: 'ease-out',
-    duration: 6000,
-    delay: 2500
+    duration: 4000,
+    delay: 3000
 }
 
 // animations for the sections
@@ -73,3 +73,4 @@ sr.reveal('.cover h1', titleAnim);
 sr.reveal('.cover h2', subTitleAnim);
 
 sr.reveal('.cover .mainBtn', mainBtnAnim)
+
