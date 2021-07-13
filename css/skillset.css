@@ -22,11 +22,6 @@
     gap: 2vh;
 }
 
-.skillset-sect > h1 {
-    font-size: 1.6rem;
-
-}
-
 .bar {
     /* background: linear-gradient(88.69deg, #3494E6 4.92%, #4967FE 96.69%); */
     background: linear-gradient(88.69deg, #ED7836 4.92%, #DD4B4B 87.61%);

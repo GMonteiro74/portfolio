@@ -1,0 +1,35 @@
+
+.under-const {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cone-icon {
+    background: url(../Imagens/cone.png);
+    width: 226px;
+    height: 211px;
+    background-size:cover;
+    transform: scale(0.5);
+}
+
+.under-const a{
+    text-align: left;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    
+}
+
+.under-const h2 {
+    text-decoration: underline;
+}
+
+.under-const a h1 {
+    font-weight: 400;
+    font-size: 2rem;
+}

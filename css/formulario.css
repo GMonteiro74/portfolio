@@ -36,3 +36,12 @@ input:focus, input:hover, textarea:focus, textarea:hover {
 }
 
 
+@media screen and (min-width: 750px) {
+
+    form {
+        width: 45vw;
+        display: flex;
+        align-self: center;
+    }
+    
+}

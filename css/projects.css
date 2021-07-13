@@ -15,20 +15,16 @@
     width: 90%;
     height: 70%;
     padding: 40px 20px;
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-    align-items: center;
-    gap: 8vh;
     
 }
 
-.flex-row {
+.proj-wrap {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .title-proj {
@@ -43,7 +39,7 @@
 }
 
 .title-proj h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
 }
@@ -69,56 +65,81 @@
 }
 
 
-    /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); */
-
+.img-website, .img-mobile {
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
+    transition: transform 2s ease-in-out;
+}
 
 .img-website {
     width: 60vw;
     height: 25vh;
-    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
+
 }
 
 .img-mobile {
     height: 40vh;
     width: 25vw;
-    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
+    min-width: 140px;
 }
 
-.proj-card:first-child .img-website:nth-child(2) {
+.proj-card:first-child .img-website:nth-child(3) {
     background: url(../Imagens/abaco_16_9.png);
     background-size: cover;
 }
 
-.proj-card:nth-child(2) .img-website:nth-child(2) {
+.proj-card:nth-child(2) .img-website:nth-child(3) {
     background: url(../Imagens/pecafruta.png);
     background-size: cover;
 }
 
-.proj-card:nth-child(3) .img-mobile:nth-child(1) {
+.proj-card:nth-child(3) .img-mobile:nth-child(2) {
     background: url(../Imagens/cripto_1.png);
     background-size: cover;
 }
 
-.proj-card:nth-child(3) .img-mobile:nth-child(3) {
+.proj-card:nth-child(3) .img-mobile:nth-child(4) {
     background: url(../Imagens/inbox01.png);
     background-size: cover;
 }
 
-.proj-card:nth-child(4) .img-mobile:nth-child(1) {
+.proj-card:nth-child(4) .img-mobile:nth-child(2) {
     background: url(../Imagens/smartphone.png);
     background-size: cover;
 }
 
-.proj-card:nth-child(4) .img-mobile:nth-child(3) {
+.proj-card:nth-child(4) .img-mobile:nth-child(4) {
     background: url(../Imagens/smartphone_metpt.png);
     background-size: cover;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
+
+    .img-mobile:hover, .img-website:hover {
+        transform: scale(1.1);
+    }
+
+    .proj-card img {
+        display: none;
+    }
+
+    .proj-wrap {
+        width: 90%;
+    }
+
+    .projs-flex a:nth-child(1) .proj-wrap, .projs-flex a:nth-child(2) .proj-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 8vh;
+    }
+
+    .hide {
+        display: block;
+    }
+    
     .proj-card {
-        width: 75%;
+        width: 60%;
         height: 100%;
     }
 
@@ -128,17 +149,13 @@
     }
 
     .img-mobile {
-        height: 60vh;
-        width: 20vw;
+        height: 50vh;
+        width: 15vw;
         
     }
 
-    .hide {
-        display: block;
-    }
-
     .projs-flex {
-        gap: 10vh;
+        gap: 15vh;
     }
     
 }
